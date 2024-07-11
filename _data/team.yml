@@ -1,26 +1,67 @@
 # Project team members listed below will appear on the /team page
 
-- name: Philip J. Fry
-  role: Delivery boy # Will appear next to name
-  image: assets/theme/images/fry_ethan-hoover-311143-unsplash.jpg # Can be external link
+- name: dr. Bogdan Roșca
+  role: director de proiect # Will appear next to name
+  image: assets/theme/images/poza_eu.jpg # Can be external link
   description: > # Can be Markdown
-    Protagonist, from the 20th century. Many times great-uncle to Professor Hubert Farnsworth.
-  orcid: 0000-0000-0000-0000
-  researchgate: researchgate_username
-  googlescholar: googlescholar_username
-  twitter: twitter_username
-  mastodon: https://mastodon.social/@mastodon_username
-  github: github_username
-  email: name@example.com
+    Cercetător științific, gradul II, specialist în [Geomatică aplicată în Știința solului](https://www.researchgate.net/profile/Bogdan_Rosca).
+  orcid: 0000-0001-5878-7932
+  brainmap: public-profile-82886735
+  email: roscao@gmail.com
+  github: roscao
+  twitter: RoscaRoscao
+  
 
-- name: Turanga Leela
-  role: Captain
+- name: dr. Cristian Valeriu Patriche
+  role: cercetător
+  image: assets/theme/images/patriche.jpg
   description: >
-    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
-    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+    Cercetător științific gradul I, specialist în Geomatică și Geostatistică aplicată în [Climatologie, Știința solului și Geomorfologie](https://www.researchgate.net/profile/Cristian_Patriche/research).
+  orcid: 0000-0003-4970-0860
+  brainmap: cristian-valeriu-patriche
+  email: pvcristi@yahoo.com
 
-- name: Professor Hubert J. Farnsworth
-  role: CEO & Owner
-  image: assets/theme/images/farnsworth_angelo-abear-1662775-unsplash.jpg
+- name: dr. Radu Gabriel Pîrnău
+  role: cercetător
+  image: assets/theme/images/radu.jpg
   description: >
-    Many times great-nephew of Fry. Tenured professor of [Mars University](https://en.wikipedia.org/wiki/Mars_University).
+   Cercetător științific, gradul III, specialist în [Știința solului și Pedo-Arheologie](https://www.researchgate.net/profile/Pirnau_Gabriel).
+  orcid: 0000-0003-3368-6662
+  brainmap: radu-gabriel-pirnau
+  email: radupirnau@yahoo.com
+  
+- name: dr. Marina Iosub
+  role: cercetător postdoctoral
+  image: assets/theme/images/marina.jpg
+  description: >
+   Cercetător științific postdoctoral, analist GIS în [Hidrologie și Evaluarea Riscurilor de Mediu](https://www.researchgate.net/profile/Marina-Iosub-2).
+  orcid: 0000-0001-5894-4555
+  brainmap: marina-iosub
+  email: iosub.marina@gmail.com
+
+- name: dr. Andrei Enea
+  role: cercetător postdoctoral
+  image: assets/theme/images/andrei.jpg
+  description: >
+   Cercetător științific postdoctoral, specialist în [Teledetecție și Fotogrammetrie](https://www.researchgate.net/profile/Andrei-Enea-2).
+  orcid: 0000-0002-8150-781X
+  brainmap: andrei-enea
+  email: andenea@gmail.com
+  
+- name: dr.  Oana Elena Chelariu
+  role: cercetător postdoctoral
+  image: assets/theme/images/oana.jpg
+  description: >
+   Cercetător științific postdoctoral, analist GIS în [Hidrologie și Evaluarea Riscurilor de Mediu](https://www.researchgate.net/profile/Oana-Elena-Chelariu).
+  orcid: 0000-0003-4468-0688
+  brainmap: oana-elena-hapciuc-cas-chelariu
+  email: oana.chelariu@uaic.ro
+  
+  name: dr.  Ionuț Vasiliniuc
+  role: cercetător
+  image: assets/theme/images/Vasiliniuc.jpg
+  description: >
+   Cercetător științific, specialist în [Știința solului și Geomorfologie](https://www.researchgate.net/profile/Ionut-Vasiliniuc).
+  orcid: 0000-0003-0923-0358
+  brainmap: ionut-vasiliniuc
+  email: oana.chelariu@uaic.ro
