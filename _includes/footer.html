@@ -17,7 +17,7 @@
 
             {% if site.social.twitter %}
               <li class="list-inline-item">
-                <a href="https://twitter.com/{{ site.social.twitter }}">
+                <a href="https://twitter.com/RoscaRoscao">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -50,7 +50,7 @@
 
             {% if site.social.github %}
               <li class="list-inline-item">
-                <a href="https://github.com/{{ site.social.github }}">
+                <a href="https://github.com/roscao">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -82,12 +82,28 @@
               {% for item in col.links %}
                 <li>
                   <i class="fa-li fa fa-chevron-circle-right"></i>
-                  <a href="{{ item.href | relative_url }}"{% if item.new_window %} target="_blank"{% endif %}>{{ item.text }}</a>
+                  <a href="https://acadiasi.org/"</a>
+			            <img src="/assets/theme/images/Logo-Acad.png" style="height:auto; width:60%;">
                 </li>
               {% endfor %}
             </ul>
           {% endif %}
         </div>
+      <div class="col-lg">
+        {{ col.description | markdownify }}
+
+        {% if col.links %}
+          <ul class="fa-ul">
+          {% for item in col.links %}
+            <li>
+			<a href="https://uefiscdi.gov.ro/"</a>
+			<img src="/assets/img/uefiscdi-logo.png" style="height:auto; width:50%;">
+			</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+
+      </div>
       {% endfor %}
     </div>
 
