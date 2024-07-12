@@ -1,25 +1,21 @@
 ---
-title: About
-description: Here you can describe your project, lab or yourself. Or remove this page altogether if you don't want to do that.
+title: Despre
+description: Obiectivele și etapele de realizare ale proiectului.
 background:
-  img: https://images.unsplash.com/photo-1475906089153-644d9452ce87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80
-  by: CHUTTERSNAP
-  href: https://unsplash.com/photos/UmncJq4KPcA
+  /assets/theme/images/covasna.jpg
 permalink: /about/
 ---
 
-{:.alert .alert-warning}
-The source file for this page is [`pages/about.md`](https://raw.githubusercontent.com/peterdesmet/petridish/main/pages/about.md).
-
-This is a default page. See [configuration]({{ '/docs/configuration/' | relative_url }}) to learn more about **pages**.
-
-To remove this page, you need to:
-
-- Remove `pages/about.md`
-- Update `_data/navigation.yml` to remove the link to this page from the top navigation.
-
-## Some gibberish
-
-Forth. I said, creeping fowl. Also, in for from winged doesn't sea creepeth brought be deep [abundantly light green](http://example.com) they're living green years firmament thing fly moving land, divide good spirit you'll fruitful waters one land us thing a man dry doesn't created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is. Dominion shall very. Above.
-
-He land lights. Give and lights upon subdue life. Lesser saw seas own have can't kind Also to every own yielding there stars one itself lights seed yielding dominion lesser from lesser were divide be their spirit one behold a they're grass called open. Let bearing god. Their shall from third very beast won't may upon. Fruitful, years appear given a. For to and multiply given is greater together days god. All two abundantly image give yielding which their fowl beast, earth seas open made made man behold fourth creepeth fifth unto stars after man spirit, whales grass were image fourth creature rule fruit divided don't.
+## Prezentare generală
+Proiectul are ca scop principal furnizarea unei platforme integrate dedicate cartografierii solului
+la scară mare și este adresat în principal specialiștilor din domeniul științei solului
+dar și cercetătorilor din alte domenii precum și fermierilor sau administratorilor de terenuri agricole.
+Componentele principale ale acestei platforme, denumite Infrastructura de date Spațiale (SDI), se bazează în principal pe unelte, programe și date Open Source dar integrează și date cu circulație restrânsă.
+![fig. 1](/assets/img/schema.png)_Principalele componente ale Infrastructurii de Date Spațiale Open Source pentru cartografierea solului și administrarea teritoriului_
+Obiectivele proiectului sunt astfel strâns legate de structura generală a SDI:
+1. Stabilirea cadrului conceptual și metodologic necesar implementării Infrastructurii de date spațiale pentru cartografierea solului
+2. Dezvoltarea unei baze de date spațiale relaționale care să integreze atât date privind caracteristicile fizico-chimice ale solului (date existente în format analog în studiile pedologice) cât și date spațiale care caracterizează factorii pedogenetici (substrat, relief, climă, utilizarea terenului)
+3. Dezvoltarea de modele și unelte destinate procesării și analizei datelor, obținerii de strate derivate și interogări specifice pentru acoperirea nevoilor specialiștilor din domeniul științei solurilor precum și a altor specialiști.
+4. Crearea metadatelor pentru datele spațiale aparținând bazei de date spațiale
+5. Dezvoltarea unei aplicații de web mapping și implementarea politicilor de acces și exploatare a SDI
+6. Testarea performanțelor și a capacităților SDI prin crearea de sarcini specifice și a unui studiu pedologic complet
