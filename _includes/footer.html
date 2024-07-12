@@ -89,21 +89,7 @@
             </ul>
           {% endif %}
         </div>
-      <div class="col-lg">
-        {{ col.description | markdownify }}
-
-        {% if col.links %}
-          <ul class="fa-ul">
-          {% for item in col.links %}
-            <li>
-			<a href="https://uefiscdi.gov.ro/"</a>
-			<img src="/assets/theme/images/uefiscdi-logo.png" style="height:auto; width:10%;">
-			</li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-
-      </div>
+      
       {% endfor %}
     </div>
 
