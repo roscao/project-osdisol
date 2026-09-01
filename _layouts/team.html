@@ -35,6 +35,12 @@ description: Template for team page.
           </li>
         {% endif %}
 
+        {% if member.brainmap %}
+          <li class="list-inline-item">
+            <a href="https://www.brainmap.ro/{{ member.brainmap }}"><img class="brainmap" src="{{ '/assets/img/brainmap.png' | relative_url }}" alt="BrainMap"></a>
+          </li>
+        {% endif %}
+
         {% if member.researchgate %}
           <li class="list-inline-item">
             <a href="https://researchgate.net/profile/{{ member.researchgate }}"><i class="fa-brands fa-researchgate"></i></a>
