@@ -60,7 +60,7 @@ Atributele specifice profilelor de sol au fost grupate în trei categorii distin
 În baza de date relațională urmează să fie introdus și un strat spațial reprezentând TEO-urile care va fi creat în urma intersecției dintre US-uri și C clasele de panta și
  expoziție clasificate conform metodologiei.
 De asemenea s-au stabilit arealele de lucru pentru care s-au obținut studii pedologice la scara 1:10000 și în care s-au programat deplasări în teren pentru recoltarea de probe
- de sol suplimentare care să vină în completarea studiilor și să permită realizarea unui studiu nou. În alegerea zonelor de studiu ![fig. 1](/assets/img/harta_studii.png)
+ de sol suplimentare care să vină în completarea studiilor și să permită realizarea unui studiu nou. În alegerea zonelor de studiu ![fig. 1]({{ '/assets/img/harta_studii.png' | relative_url }})
 _Distribuția arealelor de studiu._ s-au avut în vedere o serie de criterii precum specificul utilizării terenului (pomicultură, viticultură, arabil, pășuni), prezența siturilor
  arheologice sau a anumitor elemente particulare (tipuri de sol azonale, zone inundabile sau zone destinate dezvoltării infrastructurii, arii protejate) precum și
  disponibilitatea unor studii pedologice cât mai complete. S-a urmărit astfel introducerea unor informații noi în baza de date care să permită și realizarea de studii
@@ -117,7 +117,7 @@ Modelul LIDAR a fost obținut pentru o regiune relativ redusă pentru a fi testa
  obținerea acestor două strate s-a realizat după modelul numeric cu rezoluție de 10m LIDAR, iar pentru zonele în care acesta nu poate fi obținut după ALOS PALSAR.
 Parametrii climatici au fost descărcați pentru intervalul cuprins între 1961 – 2013 (ROCADA), 1961 – 2020 (ECAD și TerraClimate) și au fost calculați o serie de indici
  climatici precum media multianuală a temperaturilor, suma precipitațiilor medie multianuală, evapotranspirația potențială, umiditatea solului, viteza vântului la înălțimea
- de 10m, nebulozitatea, durata de strălucire a soarelui ![fig. 2](/assets/img/indicatori.PNG){: width="100%"}_Exemple de indicatori pedologici_ Toți acești parametri vor fi
+ de 10m, nebulozitatea, durata de strălucire a soarelui ![fig. 2]({{ '/assets/img/indicatori.PNG' | relative_url }}){: width="100%"}_Exemple de indicatori pedologici_ Toți acești parametri vor fi
  utilizați după completarea bazei de date pentru calculul claselor de calitate a solului. Gradul de acoperire a datelor climatice este la nivel național și s-a reușit aducerea
  la o rezoluție spațială de 4 km prin interpolare utilizând regression kriging. Stratele spațiale privind utilizarea terenurilor, rețeaua hidrografică, limitele bazinelor
  hidrografice, limitele administrative și alte fișiere în format vectorial au ca scop crearea stratelor suport pentru procesul de cartografiere permițând delimitarea arealelor
@@ -132,7 +132,7 @@ Principalele surse de date privind caracteristicile la ora actuală sunt studiil
 
 Din fiecare fișă de sol au fost extrase diferențiat și introduse în baza de date cele trei tabele menționate la Act. 2.1. pentru fiecare profil în parte, în plus fiind introduse și unitatea administrativă și județul din care face parte. Hărțile de sol, după scanare, au fost georeferențiate prin metoda punctelor de corespondență, pentru fiecare hartă fiind create minim 40 de puncte astfel încât eroarea reziduală minimă să fie sub 5m. Punctele de corespondență reprezintă preponderent intersecții de drumuri și alte elemente stabile (cladiri, corpuri de proprietate) astfel încât să se obțină acuratețea maximă. Ca suport pentru georeferențiere s-a utilizat serviciul Google Satellite disponibil în addon-ul QuickMapServices din QGIS.
 După georeferențiere, de pe hărțile pedologice au fost extrase două strate spațiale distincte reprezentând profilele de sol sub formă de punct la care s-a înregistrat și ID-ul pentru a fi relaționat ulterior de tabelele de atribute din baza de date și unitățile de sol sub formă de poligon fiind adăugat în tabela de atribute și Nr. US, ca element de legătură pentru relaționările ulterioare. În plus, s-au digitizat și TEO-urile pentru a fi folosite la validarea procesului automat de extragere a acestora.
-În urma digitizării studiilor pedologice obținute cu sprijinul OSPA județene au fost obținute o serie de strate spațiale reprezentând distribuția spațială a unităților de sol, localizarea profilelor reprezentative și tabelele cu atributele acestora care ulterior au fost introduse în baza de date. Pe lângă aceste studii a fost necesară introducerea în baza de date a unor tabele auxiliare reprezentând clasele pentru valorile principalilor indicatori de bonitare pentru a fi utilizate în dezvoltarea modelelor și a uneltelor destinate interogării bazei de date. ![fig. 3](/assets/img/digitizare.PNG){: width="75%"}_Reprezentarea procesului de digitizare_
+În urma digitizării studiilor pedologice obținute cu sprijinul OSPA județene au fost obținute o serie de strate spațiale reprezentând distribuția spațială a unităților de sol, localizarea profilelor reprezentative și tabelele cu atributele acestora care ulterior au fost introduse în baza de date. Pe lângă aceste studii a fost necesară introducerea în baza de date a unor tabele auxiliare reprezentând clasele pentru valorile principalilor indicatori de bonitare pentru a fi utilizate în dezvoltarea modelelor și a uneltelor destinate interogării bazei de date. ![fig. 3]({{ '/assets/img/digitizare.png' | relative_url }}){: width="75%"}_Reprezentarea procesului de digitizare_
 
 ##### **Act. 2.4 – Colectarea și procesarea datelor din teren (profile de sol, imagini aeriene)**
 
@@ -145,7 +145,7 @@ Măsurarea temperaturii solului este utilizată pentru calibrarea indicatorilor 
 ##### **Act. 2.5 – Dezvoltarea modelelor și instrumentelor necesare obținerii automate a indicilor derivați și a unor parametri de sol.**
 
 Pentru automatizarea proceselor de prelucrare a datelor spațiale și obținerea de informații noi necesare în procesul de cartografiere a unităților de sol am început în această etapă dezvoltarea de instrumente și modele specifice. Astfel, utilizând limbajul de programare PYTHON au fost create o serie de unelte pentru automatizarea proceselor repetitive precum vectorizarea claselor de pantă și de expoziție în vederea obținerii TEO-urilor.
-Cu ajutorul modulului Model Designer implementat în QGIS am început realizarea de modele de procesare pentru extragerea automată a indicatorilor morfometrici ai terenului și Arealelor Climatic Omogene (ACO), strate spațiale de bază în SDI care permit delimitarea US-urilor cu un grad ridicat de acuratețe și sunt utilizate și în calculul claselor de calitate. ![fig. 4](/assets/img/TEOI_morfo.PNG){: width="75%"}_Exemple de modele și indici geomorfometrici_
+Cu ajutorul modulului Model Designer implementat în QGIS am început realizarea de modele de procesare pentru extragerea automată a indicatorilor morfometrici ai terenului și Arealelor Climatic Omogene (ACO), strate spațiale de bază în SDI care permit delimitarea US-urilor cu un grad ridicat de acuratețe și sunt utilizate și în calculul claselor de calitate. ![fig. 4]({{ '/assets/img/TEOI_morfo.PNG' | relative_url }}){: width="75%"}_Exemple de modele și indici geomorfometrici_
 
 ##### **Act. 2.6 – Dezvoltarea modelelor de distribuție spațială a parametrilor de sol**
 
@@ -209,7 +209,7 @@ Modelele destinate geoprocesării au fost create pentru obținerea rapidă a str
 În plus, pe lângă uneltele menționate anterior, au mai fost elaborate și o serie de funcții cu ajutorul limbajelor 
 Python și R destinate în principal pentru codificarea valorilor principalilor indicatori de bonitare conform MESP-87 
 dar și pentru calculul unor parametri fizico-chimici pe baza de funcții de pedotransfer.
-![fig. 5](/assets/img/unelteR.PNG){: width="75%"}_Exemple de funcții și rezultatele acestora pentru exploatarea bazei de date_
+![fig. 5]({{ '/assets/img/unelteR.png' | relative_url }}){: width="75%"}_Exemple de funcții și rezultatele acestora pentru exploatarea bazei de date_
 
 
 ##### **Act. 2.9 – Diseminarea rezultatelor și participarea la manifestări științifice naționale și internaționale**
@@ -242,12 +242,12 @@ sau a capabilităților oferite de aceasta.
 ## Elaborarea metadatelor, a politicilor de acces și dezvoltarea aplicației web-mapping și testarea Infrastructurii de Date Spatiale
 
 ##### **Act. 3.1 - Proiectarea formularelor de metadata și generarea semiautomată a acestora.**
-Formularele  de  metadata  au  fost  elaborate  conform  specificațiilor  INSPIRE  și  au  fost  elaborate pentru fiecare strat spațial în parte. În acest scop au fost utilizate facilitățile programului QGIS  dar  și  cele  oferite  de  extensia  PgMetadata  realizată  de  **3liz**  (<https://docs.3liz.org/qgis-pgmetadata-plugin/>) care permite atașarea metadatelor direct în baza de date ![fig. 4](/assets/img/formular_metadata.PNG){: width="50%"} Fișa de metadate conține în general informații legate de titlul stratului spațial, o scurtă descriere a acestuia, un istoric al realizării stratului, extinderea spațială și sistemul de coordonate precum și date tematica stratului, identificatori sau restricții de utilizare. Pe lângă aceste informații sunt adăugate și date de contact sau cele legate de persoana care a cules sau editat datele respective. 
+Formularele  de  metadata  au  fost  elaborate  conform  specificațiilor  INSPIRE  și  au  fost  elaborate pentru fiecare strat spațial în parte. În acest scop au fost utilizate facilitățile programului QGIS  dar  și  cele  oferite  de  extensia  PgMetadata  realizată  de  **3liz**  (<https://docs.3liz.org/qgis-pgmetadata-plugin/>) care permite atașarea metadatelor direct în baza de date ![fig. 4]({{ '/assets/img/formular_metadata.PNG' | relative_url }}){: width="50%"} Fișa de metadate conține în general informații legate de titlul stratului spațial, o scurtă descriere a acestuia, un istoric al realizării stratului, extinderea spațială și sistemul de coordonate precum și date tematica stratului, identificatori sau restricții de utilizare. Pe lângă aceste informații sunt adăugate și date de contact sau cele legate de persoana care a cules sau editat datele respective. 
 
 ##### **Act 3.2 - Dezvoltarea aplicației de webmapping**
 În cadrul acestei activități am optat pentru alegerea unei aplicații care să permită colectarea datelor din teren. 
 În acest sens am ales utilizarea aplicației destinate dispozitivelor mobile Merginmaps (<https://merginmaps.com/>) care ne-a permis să testăm colectarea datelor din teren și actualizarea bazei de date de la distanță.
-Aplicația permite sincronizarea cu proiectul deschis în QGIS și cu configurațiile destinate formularelor de date din proprietățile fișierului. Un avantaj major al acestei aplicații este că adaugă în mod automat valorile coordonatelor geografice și permite introducerea datelor cu ușurință. De asemenea permite introducerea opțiunilor de selectare a valorilor atributelor pe baza unor tabele auxiliare ceea ce simplifică utilizarea în teren a echipamentelor mobile ![fig. 5](/assets/img/app.PNG){: width="90%"} _Configurarea elementelor aparținând formularului și modul în care apar în aplicație_ Aplicația este disponibilă pentru dispozitivele mobile de tip smartphone sau tabletă și poate fi instalată atât pe sisteme de operare Android cât și pe Apple.
+Aplicația permite sincronizarea cu proiectul deschis în QGIS și cu configurațiile destinate formularelor de date din proprietățile fișierului. Un avantaj major al acestei aplicații este că adaugă în mod automat valorile coordonatelor geografice și permite introducerea datelor cu ușurință. De asemenea permite introducerea opțiunilor de selectare a valorilor atributelor pe baza unor tabele auxiliare ceea ce simplifică utilizarea în teren a echipamentelor mobile ![fig. 5]({{ '/assets/img/app.png' | relative_url }}){: width="90%"} _Configurarea elementelor aparținând formularului și modul în care apar în aplicație_ Aplicația este disponibilă pentru dispozitivele mobile de tip smartphone sau tabletă și poate fi instalată atât pe sisteme de operare Android cât și pe Apple.
 
 ##### Act. 3.3, 3.4 și 3.5 - **Integrarea constituenților în infrastructura de date spațiale și testarea funcționalității componentelor acesteia**
 Toate datele spațiale realizate în cadrul activităților anterioare, împreună cu baza de date și uneltele suplimentare au fost integrate într-un tot unitar reprezentând Infrastructura de date Spațiale (SDI) având un server dedicat și o soluție de back-up sub forma unui NAS. Au fost create configurațiile necesare conectării unor utilizatori multipli simultan. Odată cu integrarea tuturor componentelor necesare s-a trecut la testarea funcționalității SDI.
@@ -268,11 +268,11 @@ Platforma integrată reprezentată de Infrastructura de Date Spațiale dedicată
 Componentele principale ale acestei platforme, se bazează în principal pe unelte, programe și date deschise dar integrează și date cu circulație restrânsă. Astfel , SDI 
 conține în principal o baza de date relațională cu informații legate de principalele caracteristici ale solului, date spațiale suplimentare care servesc ca suport
  pentru cartografierea unităților de sol, unelte destinate exploatării datelor spațiale și a bazei de date și echipamente hardware specifice.
-![fig. 6](/assets/img/schema.PNG){: width="100%"}
+![fig. 6]({{ '/assets/img/schema.png' | relative_url }}){: width="100%"}
 Infrastructura de Date Spațială este adaptată atât lucrului în birou cât și de pe teren utilizând o aplicație capabilă să interacționeze de la distanță,
  în special pentru culegerea de date și informații noi. Această aplicație a fost adaptată cerințelor bazei de date și poate rula de pe echipamente mobile
  de tip smartphone, tabletă sau GPS-uri performante cu sistem de operare Android.
 Nu în ultimul rând, SDI este în totalitate Open Source, deci implică costuri minime legate doar de achiziția echipamentului și a resursei umane.
-![fig. 7](/assets/img/final.png)
+![fig. 7]({{ '/assets/img/final.png' | relative_url }})
 
 
